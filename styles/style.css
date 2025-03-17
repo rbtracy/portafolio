@@ -1,0 +1,159 @@
+/*Importando las fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primario:#143D60;
+    --color-secundario:#DDEB9D;
+    --color-terciario:#EB5B00;
+    --color-hover: #272727;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona:'Krona One', sans-serif;
+}
+
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    /*height: 150vh;/*viewport height->altura de la pantalla*/
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header_menu {
+    display: flex;
+    gap: 3rem;
+}
+
+.header_menu_link {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:var(--color-terciario);
+    text-decoration: none;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 4% 12%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion_contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; /*Crea espacio entre titulo y parrafo*/
+}
+
+.presentacion_contenido_titulo {
+    font-size: 1.75rem;
+    font-family: var(--fuente-krona);
+}
+
+.titulo-destaque {
+    color: var(--color-terciario);
+}
+
+.presentacion_contenido_texto {
+    font-size: 1.2rem;
+    font-family: var(--fuente-montserrat);
+    text-decoration: none;
+}
+
+.presentacion_enlaces {
+    display: flex; /*activar el modelo de caja flexible*/
+    justify-content: space-between; /*crea espacio entre los botones*/
+    flex-direction: column;/*cambiar la disposición de elementos a vertical*/
+    align-items: center; /*centrar elementos verticalmente*/
+    gap: 1.2rem; /*espacio entre cada elemento*/
+}
+
+.presentacion_enlaces_subtitulos {
+    font-family: var(--fuente-krona);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.link_certificado {
+    text-decoration: none;
+}
+
+.presentacion_enlaces_link {
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 0.5rem; /*borde redondeado del botón*/
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem; /*tamaño de la fuente*/
+    font-weight: 500; /*controla el grosor de la fuente*/
+    text-decoration: none; /*texto sin subrayado*/
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex; /*icono al mismo nivel que su nombre*/
+    justify-content: center; /*icono y nombre en el centro*/
+    align-items: center;
+    gap: 1rem; /*espacio entre icono y su nombre*/
+}
+
+.presentacion_enlaces_link:hover { /*al pasar el cursor se cambia de color*/
+    background-color: var(--color-hover);/*color de fondo*/
+    border: 2px solid #0000FF; /*borde azul alrededor del boton cuando el mouse esta sobre el*/
+    cursor: pointer; /*cambia el estilo del cursor a una mano con el dedo indice levantado*/
+}
+
+.presentacion_imagen {
+    width: 50%;
+}
+
+/*
+DESAFIO: Al pasar el cursor sobre el nombre este cambia de azul a magenta
+*/
+.nombre {
+    background-color:darkblue;
+    color: var(--color-secundario);
+
+}
+
+.nombre:hover {
+    background-color: darkmagenta;
+    font-size: 1.875rem;
+}
+
+.footer {
+    background-color: var(--color-terciario);
+    padding: 1.5rem; /*16px=1rem,8px=0.5rem*/
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1100px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header_menu {
+        justify-content: center;
+    }
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion_contenido {
+        width: auto;
+    }
+}

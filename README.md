@@ -1,11 +1,12 @@
-## Plantilla de Readme de Alura Latam
+# Página Web: PORTAFOLIO
 
-Plantilla para personalizar el readme de los proyectos de [Alura Latam](https://www.aluracursos.com/)). El objetivo de esta plantilla es ayudar a las personas que quieren crear readmes más informativos y descriptivos. Considera este modelo como base, pero si lo prefieres, ajusta los detalles según tus necesidades y, si lo deseas, [revisa este artículo que enseña cómo personalizar readmes en general](https://www.aluracursos.com/blog/como-escribir-un-readme-increible-en-tu-github).
+[![Portafolio imagen](assets/foto_amigo_secreto.JPG)](https://rbtracy.github.io/challenge-amigo-secreto/)
 
-Al crear tu readme, elimina toda la información anterior y mantén solo la imagen de portada y el contenido restante a partir del título **"Nombre del proyecto"**.
-
-## Imagen de portada
-
-Añade la imagen de portada con el tema de tu proyecto:
-
-![image](https://github.com/user-attachments/assets/c02a2e40-8b07-47e9-936c-dc45e30efc50)
+<p align="center">
+  <img src="https://img.shields.io/badge/license-Alura-green">
+  <img src="https://img.shields.io/badge/status-en_desarrollo-yellow">
+  <img src="https://img.shields.io/badge/release_date-marzo-blue">
+</p>
+   
+## 📌 Introducción
+En este *Challenge*, se ha desarrollado una aplicación que permite a los usuarios ingresar nombres de amigos en una lista para luego realizar un sorteo aleatorio y determinar quién es el "amigo secreto".
